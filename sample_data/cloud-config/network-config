@@ -1,0 +1,15 @@
+network:
+  version: 1
+  config:
+    - type: physical
+      name: net0 # must not be the name inside the VM nic with the mac addr will be renamed to this name
+      mac_address: '52:54:00:XX:XX:XX'
+      subnets:
+        - type: static
+          address: 10.XX.XX.XX/24
+          gateway: 10.XX.XX.1
+          dns_nameservers:
+            - 1.1.1.1
+            - 9.9.9.9
+          dns_search:
+            - your-domain-here.com

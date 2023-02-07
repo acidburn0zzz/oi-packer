@@ -1,0 +1,17 @@
+#cloud-config
+
+users:
+  - name: toasty
+    ssh_authorized_keys:
+      - "ssh-ed25519 AAAAbbbbbbbbbbbbbbbbdsetwefs hello@example.vom"
+      - "ssh-rsa AAAABsuperlongassstring email@doman.ain"
+    groups: [staff]
+  - name: root
+    ssh_authorized_keys:
+      - "ssh-ed25519 AAAAbdcefghijklmnopqrstuvwxyz"
+      - "ssh-rsa AAAABsuperlongstringigystring" 
+
+packages:
+  - 'web/curl'
+  - 'system/library/gcc-10-runtime' 
+  - 'system/library/gcc-10-compat-links'

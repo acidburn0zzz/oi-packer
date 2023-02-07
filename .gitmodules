@@ -1,0 +1,6 @@
+[submodule "metadata-agent"]
+	path = metadata-agent
+	url = git@github.com:Toasterson/metadata-agent.git
+[submodule "image-builder"]
+	path = image-builder
+	url = git@github.com:Toasterson/image-builder

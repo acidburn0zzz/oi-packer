@@ -1,0 +1,32 @@
+{
+    "dataset": {
+        "name": "stable",
+        "input_snapshot": "strap",
+        "output_snapshot": "image"
+    },
+
+    "steps": [
+        { "t": "pkg_install", "pkgs": [
+            "/editor/vim",
+            "/network/rsync",
+            "/system/library/gcc-runtime",
+            "/system/library/g++-runtime",
+            "/network/ftp",
+            "/network/openssh-server",
+            "/network/telnet",
+            "/service/network/ntpsec",
+            "/web/curl",
+            "/web/wget",
+            "/system/management/mdata-client"
+        ] },
+
+        { "t": "pkg_install", "with": "build", "pkgs": [
+            "/developer/build-essential",
+            "/developer/omnios-build-tools"
+        ] },
+
+        { "t": "pkg_purge_history" },
+
+        { "t": "seed_smf" }
+    ]
+}

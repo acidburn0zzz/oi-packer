@@ -6,3 +6,7 @@ packer_cache/
 output/
 .vagrant
 .packer-vars.json
+/etc/config.sh
+
+/templates/files/metadata
+/templates/files/useragent
